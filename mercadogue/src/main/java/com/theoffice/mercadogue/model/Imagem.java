@@ -1,11 +1,6 @@
 package com.theoffice.mercadogue.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
@@ -22,6 +17,7 @@ public class Imagem {
 	private String path;
 	
 	@ManyToOne
+	@JoinColumn(name="produto")
 	@JsonIgnoreProperties("imagem")
 	private Produto produto;
 
@@ -47,5 +43,5 @@ public class Imagem {
 
 	public void setProduto(Produto produto) {
 		this.produto = produto;
-	}	
+	}
 }

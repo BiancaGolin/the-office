@@ -9,7 +9,7 @@ import com.sun.istack.NotNull;
 import java.util.List;
 
 @Entity
-@Table(name = "tb_categoria")
+@Table(name = "tb_produto")
 public class Produto {
 
 	@Id
@@ -34,8 +34,11 @@ public class Produto {
 	@NotNull
 	private float preco;
 
-	@OneToMany(mappedBy = "produto", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("produto")
+//	@OneToMany(cascade = CascadeType.ALL, mappedBy = "produto")
+//	@JoinColumn(name="imagem")
+//	@JsonIgnoreProperties("produto")
+
+	@OneToMany(mappedBy = "produto", cascade=CascadeType.ALL)
 	private List<Imagem> imagem;
 
 	// Getters e Setters
@@ -100,6 +103,8 @@ public class Produto {
 	}
 
 	public void setImagem(List<Imagem> imagem) {
+
 		this.imagem = imagem;
+		imagem.forEach(entity -> entity.setProduto(this));
 	}
 }

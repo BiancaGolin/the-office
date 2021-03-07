@@ -2,8 +2,6 @@ package com.theoffice.mercadogue.controller;
 
 import java.util.List;
 
-import com.theoffice.mercadogue.model.Imagem;
-import com.theoffice.mercadogue.controller.ImagemController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,9 +49,7 @@ public class ProdutoController {
 	
 	@PostMapping
 	public ResponseEntity<Produto> post(@RequestBody Produto produto){
-		ResponseEntity requisicao = ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
-		imgController.postImg(produto.getImagem().get(0).getPath());
-		return requisicao;
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
 	
 	@PutMapping
