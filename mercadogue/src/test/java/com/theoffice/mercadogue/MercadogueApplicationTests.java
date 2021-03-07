@@ -1,10 +1,10 @@
-package com.theOffice;
+package com.theoffice.mercadogue;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TheOfficeApplicationTests {
+class MercadogueApplicationTests {
 
 	@Test
 	void contextLoads() {
