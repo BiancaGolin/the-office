@@ -1,0 +1,33 @@
+#navegacao{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.nav-link{
+    color: #ff8247;
+}   
+   .nav-link:hover {
+    color: #a9a9a9;
+   }
+.nomeProduto{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.voltar{
+    color: #ff8247;
+}
+.fotosEinformacoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.descricao{
+    font-family: fantasy;
+    color :rgb(85, 96, 170);
+}
+#carouselExampleIndicators{
+    border: 1px solid rgb(85, 96, 170);
+}
+.infos2{
+    border: 1px solid #a9a9a9;
+}

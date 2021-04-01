@@ -1,0 +1,17 @@
+.titulo{
+    text-align: center;
+}
+.Linha{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+}
+.table-responsive{
+    margin-bottom: 3%;
+}
+.Paginas{
+display: flex;
+justify-content: center;
+align-items: center;
+}

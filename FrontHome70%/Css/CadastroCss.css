@@ -1,0 +1,142 @@
+body{
+    background-color: #EFEFEF;
+    font-family: Calibri;
+}
+
+/*Header*/
+#container-logo{
+    margin-left: 1.5vw;
+    position: absolute;
+    z-index: 1;
+}
+#container-logo #logo{
+    width: 5vw;
+    margin-top: 0.7vw;
+}
+#titulo{
+    text-align: center;
+    background-color: #5560AA;
+    font-family: Berlin Sans FB;
+    color: #EFEFEF;
+    padding: 2vw;    
+}
+#titulo h2{
+    font-size: 2em;    
+}
+
+/*Menu*/
+#navegacao{
+    background-color: white;
+    font-family: Century Gothic;
+    font-weight: bolder;
+}
+.nav-link{
+    color: #F77759;
+}   
+.nav-link:hover {
+    color: #C8C8C8;
+}
+#linha{
+    background-color: #C8C8C8;
+    height: 5px;
+}
+
+/*Labels e campos de preenchimento*/
+.label{
+    color: #5560AA;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+.column-count{
+    column-count: 4;
+}
+.column-count-status{
+    column-count: 2;
+}
+.form-control, .custom-select{
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+input:placeholder-shown, textarea:placeholder-shown{
+    font-style: italic;
+}
+
+/*Botões*/
+.botoes{
+    margin-left: 73%;
+    padding: 2vw;
+    font-family: Century Gothic;
+}
+.botoes #btn-cancelar{    
+    background-color: #F77759;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    border-color: transparent; 
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    margin-right: 0.5vw;
+    outline: none;    
+}
+.botoes #btn-confirmar{
+    background-color: #00D9CA;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    outline: none;
+}
+.botoes #btn-cancelar:hover{
+    border-color: #F77759;
+}
+.botoes #btn-confirmar:hover{
+    border-color: #00D9CA;
+}
+
+/*Customizações responsivas*/
+@media (max-width: 1200px){
+    #container-logo #logo{
+        width: 5vw;
+        margin-top: 0.9vw;
+    }
+    .botoes{
+        margin-left: 70%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    }
+}
+@media (max-width: 1000px){
+    #container-logo #logo{
+        width: 6vw;
+        margin-top: 0.8vw;
+    }
+    .botoes{
+        margin-left: 60%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    }
+}
+@media (max-width: 800px){
+    #container-logo #logo{
+        width: 7vw;
+        margin-top: 0.8vw;
+    }
+    .botoes{
+        margin-left: 50%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    }
+}
+@media (max-width: 600px){
+    #container-logo #logo{
+        width: 8vw;
+        margin-top: 1.5vw;
+    }
+    .botoes{
+        margin-left: 40%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    }
+}

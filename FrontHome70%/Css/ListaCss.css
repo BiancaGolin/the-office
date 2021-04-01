@@ -1,0 +1,175 @@
+body{
+    background-color: #EFEFEF;
+    font-family: Calibri;
+}
+
+/*Header*/
+#container-logo{
+    margin-left: 1.5vw;
+    position: absolute;
+    z-index: 1;
+}
+#container-logo #logo{
+    width: 5vw;
+    margin-top: 0.7vw;
+}
+#titulo{
+    text-align: center;
+    background-color: #5560AA;
+    font-family: Berlin Sans FB;
+    color: #EFEFEF;
+    padding: 2vw;    
+}
+#titulo h2{
+    font-size: 2em;    
+}
+
+/*Menu*/
+#navegacao{
+    background-color: white;
+    font-family: Century Gothic;
+    font-weight: bolder;
+}
+.nav-link{
+    color: #F77759;
+}   
+.nav-link:hover {
+    color: #C8C8C8;
+}
+#linha{
+    background-color: #C8C8C8;
+    height: 5px;
+}
+
+.Linha{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+}
+.table-responsive{
+    margin-bottom: 3%;
+}
+
+/*Botões e links*/
+.botao{
+    margin-left: 80%;
+    padding: 2vw;
+    font-family: Century Gothic;
+}
+.botao #btn-confirmar{
+    background-color: #5560AA;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    outline: none;
+}
+.botao #btn-confirmar:hover{
+    border-color: #5560AA;
+}
+.pesquisar #btn-pesquisar{
+    font-family: Century Gothic;
+    background-color: #F77759;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+    padding: 4.5px 13px;
+    outline: none;
+}
+.pesquisar #btn-pesquisar:hover{
+    border-color: #F77759;
+}
+.container-icone{
+    width: 10%;
+}
+.btn-visualizar{
+    width: 50%;
+}
+.btn-editar{
+    width: 30%;
+}
+tbody a{
+    text-decoration: underline;
+    color: black;
+}
+tbody a:visited{
+    color: black;
+}
+tbody a:hover{
+    color: #F77759;
+}
+.form-control{
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+input:placeholder-shown{
+    font-style: italic;
+}
+.paginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Tabela*/
+tbody tr:nth-child(2n+1){
+    background-color: white;
+}
+tbody tr:nth-child(2n){
+    background-color: #DEDEDE;
+}
+thead{
+    font-family: Century Gothic;
+    font-weight: bolder;
+}
+
+/*Customizações responsivas*/
+@media (max-width: 1200px){
+    #container-logo #logo{
+        width: 5vw;
+        margin-top: 0.9vw;
+    }
+    .botao{
+        margin-left: 77%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    } 
+}
+@media (max-width: 1000px){
+    #container-logo #logo{
+        width: 6vw;
+        margin-top: 0.8vw;
+    }
+    .botao{
+        margin-left: 65%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    } 
+}
+@media (max-width: 800px){
+    #container-logo #logo{
+        width: 7vw;
+        margin-top: 0.8vw;
+    }
+    .botao{
+        margin-left: 60%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    } 
+}
+@media (max-width: 600px){
+    #container-logo #logo{
+        width: 8vw;
+        margin-top: 1.5vw;
+    }
+    .botao{
+        margin-left: 60%;
+        padding: 2vw;
+        font-family: Century Gothic;
+    }   
+}
