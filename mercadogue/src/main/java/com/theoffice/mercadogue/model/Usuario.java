@@ -1,6 +1,8 @@
 package com.theoffice.mercadogue.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -10,9 +12,15 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Size(min=5)
     private String nomeUsuario;
+
+    @Email
     private String email;
+
+    @Size(min=3)
     private String senha;
+
     private int tipoUsuario;
     private boolean statusUsuario;
 

@@ -43,7 +43,7 @@ public class UsuarioService {
 
 
                 user.get().setToken(authHeader);
-                //user.get().setId(usuario.get().getId());
+                user.get().setNomeUsuario(usuario.get().getNomeUsuario());
                 user.get().setEmail(usuario.get().getEmail());
                 user.get().setSenha(usuario.get().getSenha());
                 System.out.println("retonar o usuario: " + user);

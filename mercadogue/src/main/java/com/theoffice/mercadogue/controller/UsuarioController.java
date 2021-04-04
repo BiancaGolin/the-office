@@ -35,17 +35,12 @@ public class UsuarioController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-//    @GetMapping("nomeUsuario/{nomeUsuario}")
-//    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario){
-//        return ResponseEntity.ok(repository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));
-//    }
-
-    @PostMapping
-    public ResponseEntity<Usuario> post(@RequestBody Usuario usuario){
-        return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+    @GetMapping("nomeUsuario/{nomeUsuario}")
+    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario){
+        return ResponseEntity.ok(repository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));
     }
 
-    @PutMapping
+    @PutMapping("/alterar")
     public ResponseEntity<Usuario> put(@RequestBody Usuario usuario) {
         return ResponseEntity.ok(repository.save(usuario));
     }
