@@ -29,14 +29,27 @@ public class UsuarioController {
     }
 
     @GetMapping("id/{id}")
-    public ResponseEntity<Usuario> getById(@PathVariable int id){
+    public ResponseEntity<Usuario> getById(@PathVariable int id) {
         return repository.findById(id)
                 .map(resp -> ResponseEntity.ok(resp))
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("validemail")
+    public ResponseEntity<Boolean> getEmailExistente(@PathVariable String email) {
+        List<Usuario> usuario = repository.findAllByNomeUsuarioContainingIgnoreCase(email);
+
+        boolean existeEmail = true;
+
+        if (usuario.isEmpty()) {
+            existeEmail = false;
+        }
+
+        return ResponseEntity.ok(existeEmail);
+    }
+
     @GetMapping("nomeUsuario/{nomeUsuario}")
-    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario){
+    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario) {
         return ResponseEntity.ok(repository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));
     }
 
