@@ -46,6 +46,8 @@ public class UsuarioService {
                 user.get().setNomeUsuario(usuario.get().getNomeUsuario());
                 user.get().setEmail(usuario.get().getEmail());
                 user.get().setSenha(usuario.get().getSenha());
+                user.get().setTipoUsuario(usuario.get().getTipoUsuario());
+                user.get().setStatusUsuario(usuario.get().isStatusUsuario());
                 System.out.println("retonar o usuario: " + user);
                 return user;
             }
