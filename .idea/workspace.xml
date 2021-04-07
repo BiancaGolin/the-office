@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3139d61b-d51c-465c-b46f-6a0623ba7aca" name="Default Changelist" comment="" />
+    <list default="true" id="3139d61b-d51c-465c-b46f-6a0623ba7aca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
