@@ -22,6 +22,7 @@ public class Usuario {
     private String senha;
 
     private int tipoUsuario;
+
     private boolean statusUsuario;
 
     public int getId() {

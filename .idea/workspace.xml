@@ -1,113 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3139d61b-d51c-465c-b46f-6a0623ba7aca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Css/CadastroCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Css/ListaCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Css/ProdutoCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Css/produtos.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/ColeiraCaes.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/ColeiraCaes3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/EditarBranco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/EditarCinza.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/Estrela.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/LogoMercadogue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/VisualizarBranco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/VisualizarCinza.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/Voltar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/casaCaes_6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/coleiraCaes_2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/dreamies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoCaes_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoCaes_2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoCaes_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoCaes_4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/racaoGatos_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/roupaGatos_1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/roupaGatos_2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/roupaGatos_3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/roupaGatos_4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/teste1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/teste2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Imagens/teste3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/CCG.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/CCP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/CadastroProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/ColeiraAbacate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/DogPremium.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/Dreamies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/ListaDeProdutos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/PuruinaDog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/VisualizarProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/roupaGatoDinossauro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/royal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontHome70%/Paginas/whiskas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Css/CadastroCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Css/ListaCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Css/ProdutoCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/EditarBranco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/EditarCinza.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/Estrela.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/LogoMercadogue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/VisualizarBranco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/VisualizarCinza.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/Voltar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/teste1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/teste2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Imagens/teste3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Paginas/CadastroProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Paginas/ListaDeProdutos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Listagem, Cadastro e Visualização/HTML5Application/public_html/Paginas/VisualizarProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Css/CadastroCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Css/ListaCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Css/ProdutoCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Imagens/LogoPITeste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Imagens/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Imagens/teste1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Imagens/teste2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Imagens/teste3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Paginas/CadastroProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Paginas/ListaDeProdutos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI4_FrontEnd/Paginas/VisualizarProduto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1/AlteracaoProduto.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1/AtivacaoProduto.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1/CadastroProduto.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1/ListagemProdutos.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototipos_Sprint1/VisualizacaoProduto.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/BasicSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/BasicSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" afterDir="false" />
+    <list default="true" id="5e1a37b5-cdf2-44aa-b005-6d9e53005f39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/the-office.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-office.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/MercadogueApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ImagemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ProdutoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Imagem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/UsuarioLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ImagemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ProdutoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/BasicSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercadogue/src/test/java/com/theoffice/mercadogue/MercadogueApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1qj0tdIjeACFsljDMxITkyXyCRZ" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qona1j56ZG0rdTch3ASSNzd6ta" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -115,14 +48,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RunManager">
+    <configuration name="MercadogueApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.theoffice.mercadogue.MercadogueApplication" />
+      <module name="the-office" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.theoffice.mercadogue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MercadogueApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3139d61b-d51c-465c-b46f-6a0623ba7aca" name="Default Changelist" comment="" />
-      <created>1617577911551</created>
+      <changelist id="5e1a37b5-cdf2-44aa-b005-6d9e53005f39" name="Default Changelist" comment="" />
+      <created>1617754871483</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617577911551</updated>
+      <updated>1617754871483</updated>
     </task>
     <servers />
   </component>
