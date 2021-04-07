@@ -9,6 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -23,7 +24,24 @@ public class UsuarioService {
         String senhaEncoder = encoder.encode(usuario.getSenha());
         usuario.setSenha(senhaEncoder);
 
-        return repository.save(usuario);
+        Usuario usu = new Usuario();
+
+        try {
+            List<Optional<Usuario>> listUsuarioByEmail = repository.findByEmailList(usuario.getEmail());
+            System.out.println(listUsuarioByEmail);
+
+            if (listUsuarioByEmail.isEmpty()) {
+                repository.save(usuario);
+                return repository.save(usuario);
+            } else {
+                usu.setEmail("email ja cadastrado");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return usu;
+
     }
 
     public Optional<UsuarioLogin> logar(Optional<UsuarioLogin> user) {
@@ -31,7 +49,7 @@ public class UsuarioService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         Optional<Usuario> usuario = repository.findByEmail(user.get().getEmail());
 
-    System.out.println("metodo logar inicio");
+        System.out.println("metodo logar inicio");
         if (usuario.isPresent()) {
             System.out.println("primeira condicao para ver se o usuario esta presente");
             if (encoder.matches(user.get().getSenha(), usuario.get().getSenha())) {

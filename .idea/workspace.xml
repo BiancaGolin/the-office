@@ -7,30 +7,9 @@
     <list default="true" id="5e1a37b5-cdf2-44aa-b005-6d9e53005f39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/the-office.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-office.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/MercadogueApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ImagemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ProdutoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Imagem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/UsuarioLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ImagemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ProdutoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/BasicSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/test/java/com/theoffice/mercadogue/MercadogueApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +27,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
@@ -80,5 +63,46 @@
       <updated>1617754871483</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
