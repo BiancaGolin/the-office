@@ -35,6 +35,24 @@ public class UsuarioController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("validemail/{emailUsuario}")
+    public ResponseEntity<Boolean> getEmailExistente(@PathVariable String emailUsuario) {
+//        Optional<Usuario> usuario = repository.findByEmail(email);
+//
+//        boolean existeEmail = true;
+//        Usuario usuario1 = usuario.;
+//
+//
+//        if (usuario1 == null) {
+//            existeEmail = false;
+//        }
+        System.out.println("entrou" + emailUsuario);
+        return null;
+    }
+    @GetMapping("emailUsuario/{emailUsuario}")
+    public ResponseEntity<Optional<Usuario>> getEmail(@PathVariable String emailUsuario) {
+        return ResponseEntity.ok(repository.findByEmail(emailUsuario));
+    }
     @GetMapping("nomeUsuario/{nomeUsuario}")
     public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario){
         return ResponseEntity.ok(repository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));

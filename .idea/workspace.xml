@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e1a37b5-cdf2-44aa-b005-6d9e53005f39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/the-office.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-office.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/MercadogueApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ImagemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/ProdutoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Imagem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/model/UsuarioLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ImagemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/ProdutoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/repository/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/BasicSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/security/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/java/com/theoffice/mercadogue/service/UsuarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercadogue/src/test/java/com/theoffice/mercadogue/MercadogueApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/controller/UsuarioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
