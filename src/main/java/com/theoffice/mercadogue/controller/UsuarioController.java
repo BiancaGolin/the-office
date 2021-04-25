@@ -4,12 +4,13 @@ import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
 import com.theoffice.mercadogue.repository.UsuarioRepository;
 import com.theoffice.mercadogue.service.UsuarioService;
+import org.hibernate.validator.constraints.br.CPF;
+import org.hibernate.validator.internal.constraintvalidators.hv.br.CPFValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.ws.Response;
 import java.util.List;
 import java.util.Optional;
 
@@ -36,6 +37,15 @@ public class UsuarioController {
         boolean existeCEP = usuarioService.consultaCep(cep);
 
         return ResponseEntity.ok().body(existeCEP);
+    }
+
+
+    @GetMapping("consultacpf/{cpf}")
+    public ResponseEntity<Boolean> consultaCPF(@CPF @PathVariable String cpf) {
+
+        CPFValidator cpfValidator = new CPFValidator();
+        return ResponseEntity.ok().body(usuarioService.validaCPF(cpf));
+
     }
 
     @GetMapping("validanome/{nome}")

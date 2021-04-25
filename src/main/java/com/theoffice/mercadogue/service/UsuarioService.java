@@ -1,10 +1,13 @@
 package com.theoffice.mercadogue.service;
 
+import br.com.caelum.stella.validation.CPFValidator;
+import br.com.caelum.stella.validation.InvalidStateException;
 import com.theoffice.mercadogue.model.EnderecoDTO;
 import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
 import com.theoffice.mercadogue.repository.UsuarioRepository;
 import org.apache.commons.codec.binary.Base64;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -72,6 +75,16 @@ public class UsuarioService {
 
         return true;
 
+    }
+
+    public boolean validaCPF(String cpf) {
+        try {
+            CPFValidator cpfValidator = new CPFValidator();
+            cpfValidator.assertValid(cpf);
+            return true;
+        } catch (InvalidStateException e) {
+            return false;
+        }
     }
 
     public boolean consultaCep(String cep) {
