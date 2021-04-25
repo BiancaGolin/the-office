@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.ws.Response;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,8 +29,20 @@ public class UsuarioController {
         return ResponseEntity.ok(repository.findAll());
     }
 
+    @GetMapping("consultacep/{cep}")
+    public ResponseEntity<Boolean> consultaCep(@PathVariable String cep) {
+
+        boolean existeCEP = usuarioService.consultaCep(cep);
+
+        if (existeCEP) {
+            return ResponseEntity.ok().body(existeCEP);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @GetMapping("id/{id}")
-    public ResponseEntity<Usuario> getById(@PathVariable int id){
+    public ResponseEntity<Usuario> getById(@PathVariable int id) {
         return repository.findById(id)
                 .map(resp -> ResponseEntity.ok(resp))
                 .orElse(ResponseEntity.notFound().build());
@@ -49,12 +62,14 @@ public class UsuarioController {
         System.out.println("entrou" + emailUsuario);
         return null;
     }
+
     @GetMapping("emailUsuario/{emailUsuario}")
     public ResponseEntity<Optional<Usuario>> getEmail(@PathVariable String emailUsuario) {
         return ResponseEntity.ok(repository.findByEmail(emailUsuario));
     }
+
     @GetMapping("nomeUsuario/{nomeUsuario}")
-    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario){
+    public ResponseEntity<List<Usuario>> getByNomeUsuario(@PathVariable String nomeUsuario) {
         return ResponseEntity.ok(repository.findAllByNomeUsuarioContainingIgnoreCase(nomeUsuario));
     }
 
