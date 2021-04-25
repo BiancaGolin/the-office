@@ -37,7 +37,7 @@ public class UsuarioController {
         if (existeCEP) {
             return ResponseEntity.ok().body(existeCEP);
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.ok().body(existeCEP);
         }
     }
 
