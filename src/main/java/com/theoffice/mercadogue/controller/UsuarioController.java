@@ -29,16 +29,20 @@ public class UsuarioController {
         return ResponseEntity.ok(repository.findAll());
     }
 
+
     @GetMapping("consultacep/{cep}")
     public ResponseEntity<Boolean> consultaCep(@PathVariable String cep) {
 
         boolean existeCEP = usuarioService.consultaCep(cep);
 
-        if (existeCEP) {
-            return ResponseEntity.ok().body(existeCEP);
-        } else {
-            return ResponseEntity.ok().body(existeCEP);
-        }
+        return ResponseEntity.ok().body(existeCEP);
+    }
+
+    @GetMapping("validanome/{nome}")
+    public ResponseEntity<Boolean> validanome(@PathVariable String nome) {
+
+        boolean nomeValido = usuarioService.validaNome(nome);
+        return ResponseEntity.ok().body(nomeValido);
     }
 
     @GetMapping("id/{id}")

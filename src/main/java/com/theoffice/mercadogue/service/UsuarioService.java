@@ -61,6 +61,19 @@ public class UsuarioService {
         return null;
     }
 
+    public boolean validaNome(String nome) {
+        if (nome.equals("undefined")) {
+            return false;
+        }
+
+        if (!nome.contains(" ")) {
+            return false;
+        }
+
+        return true;
+
+    }
+
     public boolean consultaCep(String cep) {
         try {
 
