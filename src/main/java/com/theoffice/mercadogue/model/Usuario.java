@@ -12,13 +12,15 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Size(min=5)
+    @Size(min = 5)
     private String nomeUsuario;
 
     @Email
     private String email;
 
-    @Size(min=3)
+    private String endereco;
+
+    @Size(min = 3)
     private String senha;
 
     private String cep;
@@ -27,6 +29,14 @@ public class Usuario {
     private int tipoUsuario;
 
     private boolean statusUsuario;
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
     public String getCep() {
         return cep;
