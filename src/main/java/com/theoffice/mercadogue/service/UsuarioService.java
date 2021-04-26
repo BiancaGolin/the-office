@@ -6,6 +6,7 @@ import com.theoffice.mercadogue.model.EnderecoDTO;
 import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
 import com.theoffice.mercadogue.repository.UsuarioRepository;
+import com.theoffice.mercadogue.service.exception.CPFJaCadastradorException;
 import org.apache.commons.codec.binary.Base64;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,18 @@ public class UsuarioService {
 
         String senhaEncoder = encoder.encode(usuario.getSenha());
         usuario.setSenha(senhaEncoder);
+
+        Optional<Usuario> userByCPF = repository.findByCpf(usuario.getCpf());
+
+        try {
+            if (userByCPF.isPresent()) {
+                throw new CPFJaCadastradorException("CPF já cadastrado");
+            }
+        } catch (CPFJaCadastradorException ex) {
+            Usuario userException = new Usuario();
+            userException.setNomeUsuario(ex.getMessage());
+            return userException;
+        }
 
         return repository.save(usuario);
     }

@@ -21,9 +21,28 @@ public class Usuario {
     @Size(min=3)
     private String senha;
 
+    private String cep;
+    private String cpf;
+
     private int tipoUsuario;
 
     private boolean statusUsuario;
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 
     public int getId() {
         return id;

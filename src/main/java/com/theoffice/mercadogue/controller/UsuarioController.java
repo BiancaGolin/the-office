@@ -44,6 +44,7 @@ public class UsuarioController {
     public ResponseEntity<Boolean> consultaCPF(@CPF @PathVariable String cpf) {
 
         CPFValidator cpfValidator = new CPFValidator();
+        usuarioService.validaCPF(cpf);
         return ResponseEntity.ok().body(usuarioService.validaCPF(cpf));
 
     }
