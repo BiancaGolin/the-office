@@ -2,6 +2,7 @@ package com.theoffice.mercadogue.service;
 
 import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
+import com.theoffice.mercadogue.repository.ClienteRepository;
 import com.theoffice.mercadogue.repository.UsuarioRepository;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,15 @@ public class UsuarioService {
     private UsuarioRepository repository;
 
     public Usuario cadastrarUsuario(Usuario usuario) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+
+        String senhaEncoder = encoder.encode(usuario.getSenha());
+        usuario.setSenha(senhaEncoder);
+
+        return repository.save(usuario);
+    }
+
+    public Usuario alterarUsuario(Usuario usuario) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
         String senhaEncoder = encoder.encode(usuario.getSenha());

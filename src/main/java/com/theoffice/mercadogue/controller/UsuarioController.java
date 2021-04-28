@@ -60,7 +60,7 @@ public class UsuarioController {
 
     @PutMapping("/alterar")
     public ResponseEntity<Usuario> put(@RequestBody Usuario usuario) {
-        return ResponseEntity.ok(repository.save(usuario));
+        return ResponseEntity.ok(repository.save(usuarioService.alterarUsuario(usuario)));
     }
 
     @PostMapping("/logar")
