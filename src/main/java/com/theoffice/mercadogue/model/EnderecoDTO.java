@@ -101,5 +101,4 @@ public class EnderecoDTO implements Serializable {
     public void setGia(String gia) {
         this.gia = gia;
     }
-
 }

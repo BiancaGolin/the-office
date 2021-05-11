@@ -12,18 +12,47 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Size(min=5)
+    @Size(min = 5)
     private String nomeUsuario;
 
     @Email
     private String email;
 
-    @Size(min=3)
+    private String endereco;
+
+    @Size(min = 3)
     private String senha;
+
+    private String cep;
+    private String cpf;
 
     private int tipoUsuario;
 
     private boolean statusUsuario;
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 
     public int getId() {
         return id;

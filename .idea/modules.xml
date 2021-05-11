@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/the-office.iml" filepath="$PROJECT_DIR$/.idea/the-office.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mercadogue.iml" filepath="$PROJECT_DIR$/mercadogue.iml" />
     </modules>
   </component>
 </project>
