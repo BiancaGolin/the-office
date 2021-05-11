@@ -1,5 +1,8 @@
 package com.theoffice.mercadogue.service;
 
+import br.com.caelum.stella.validation.CPFValidator;
+import br.com.caelum.stella.validation.InvalidStateException;
+import com.theoffice.mercadogue.model.EnderecoDTO;
 import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
 import com.theoffice.mercadogue.repository.ClienteRepository;
@@ -8,6 +11,7 @@ import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
@@ -17,6 +21,47 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository repository;
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    public boolean consultaCep(String cep) {
+        try {
+
+            EnderecoDTO enderecoDTO = restTemplate.getForObject("https://viacep.com.br/ws/"
+                    + cep + "/json", EnderecoDTO.class);
+            if (enderecoDTO.getCep() == null) {
+                return false;
+            }
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
+    public boolean validaNome(String nome) {
+        if (nome.equals("undefined")) {
+            return false;
+        }
+
+        if (!nome.contains(" ")) {
+            return false;
+        }
+
+        return true;
+
+    }
+
+    public boolean validaCPF(String cpf) {
+        try {
+            CPFValidator cpfValidator = new CPFValidator();
+            cpfValidator.assertValid(cpf);
+            return true;
+        } catch (InvalidStateException e) {
+            return false;
+        }
+    }
 
     public Usuario cadastrarUsuario(Usuario usuario) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
@@ -41,7 +86,7 @@ public class UsuarioService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         Optional<Usuario> usuario = repository.findByEmail(user.get().getEmail());
 
-    System.out.println("metodo logar inicio");
+        System.out.println("metodo logar inicio");
         if (usuario.isPresent()) {
             System.out.println("primeira condicao para ver se o usuario esta presente");
             if (encoder.matches(user.get().getSenha(), usuario.get().getSenha())) {

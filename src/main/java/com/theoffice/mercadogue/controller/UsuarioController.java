@@ -1,9 +1,11 @@
 package com.theoffice.mercadogue.controller;
 
+import br.com.caelum.stella.validation.CPFValidator;
 import com.theoffice.mercadogue.model.Usuario;
 import com.theoffice.mercadogue.model.UsuarioLogin;
 import com.theoffice.mercadogue.repository.UsuarioRepository;
 import com.theoffice.mercadogue.service.UsuarioService;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +30,30 @@ public class UsuarioController {
         return ResponseEntity.ok(repository.findAll());
     }
 
+    @GetMapping("consultacep/{cep}")
+    public ResponseEntity<Boolean> consultaCep(@PathVariable String cep) {
+
+        boolean existeCEP = usuarioService.consultaCep(cep);
+
+        return ResponseEntity.ok().body(existeCEP);
+    }
+
+    @GetMapping("consultacpf/{cpf}")
+    public ResponseEntity<Boolean> consultaCPF(@CPF @PathVariable String cpf) {
+
+        CPFValidator cpfValidator = new CPFValidator();
+        usuarioService.validaCPF(cpf);
+        return ResponseEntity.ok().body(usuarioService.validaCPF(cpf));
+
+    }
+
+    @GetMapping("validanome/{nome}")
+    public ResponseEntity<Boolean> validanome(@PathVariable String nome) {
+
+        boolean nomeValido = usuarioService.validaNome(nome);
+        return ResponseEntity.ok().body(nomeValido);
+    }
+
     @GetMapping("id/{id}")
     public ResponseEntity<Usuario> getById(@PathVariable int id){
         return repository.findById(id)
@@ -35,20 +61,6 @@ public class UsuarioController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping("validemail/{emailUsuario}")
-    public ResponseEntity<Boolean> getEmailExistente(@PathVariable String emailUsuario) {
-//        Optional<Usuario> usuario = repository.findByEmail(email);
-//
-//        boolean existeEmail = true;
-//        Usuario usuario1 = usuario.;
-//
-//
-//        if (usuario1 == null) {
-//            existeEmail = false;
-//        }
-        System.out.println("entrou" + emailUsuario);
-        return null;
-    }
     @GetMapping("emailUsuario/{emailUsuario}")
     public ResponseEntity<Optional<Usuario>> getEmail(@PathVariable String emailUsuario) {
         return ResponseEntity.ok(repository.findByEmail(emailUsuario));
