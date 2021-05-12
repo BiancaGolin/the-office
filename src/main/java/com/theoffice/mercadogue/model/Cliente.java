@@ -14,17 +14,18 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Size(min=5)
+    @Size(min = 5)
     private String nomeCliente;
 
     @Email
     private String emailCliente;
 
-    @Size(min=3)
+    @Size(min = 3)
     private String senhaCliente;
 
     private String endereco;
-    private String cep;
+    private String cepEntrega;
+    private String cepFaturamento;
 
     @CPF
     private String cpf;
@@ -33,16 +34,24 @@ public class Cliente {
         return endereco;
     }
 
+    public String getCepEntrega() {
+        return cepEntrega;
+    }
+
+    public void setCepEntrega(String cepEntrega) {
+        this.cepEntrega = cepEntrega;
+    }
+
+    public String getCepFaturamento() {
+        return cepFaturamento;
+    }
+
+    public void setCepFaturamento(String cepFaturamento) {
+        this.cepFaturamento = cepFaturamento;
+    }
+
     public void setEndereco(String endereco) {
         this.endereco = endereco;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
     }
 
     public String getCpf() {

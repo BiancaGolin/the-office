@@ -108,6 +108,20 @@ public class ClienteService {
         }
     }
 
+    public EnderecoDTO consultaCepCompleto(String cep) {
+        try {
+
+            EnderecoDTO enderecoDTO = restTemplate.getForObject("https://viacep.com.br/ws/" + cep + "/json", EnderecoDTO.class);
+            if (enderecoDTO.getCep() == null) {
+                return new EnderecoDTO();
+            }
+            return enderecoDTO;
+        } catch (Exception e) {
+            return new EnderecoDTO();
+        }
+
+    }
+
     public boolean consultaCep(String cep) {
         try {
 

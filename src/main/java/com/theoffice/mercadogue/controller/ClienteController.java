@@ -2,6 +2,7 @@ package com.theoffice.mercadogue.controller;
 
 import com.theoffice.mercadogue.model.Cliente;
 import com.theoffice.mercadogue.model.ClienteLogin;
+import com.theoffice.mercadogue.model.EnderecoDTO;
 import com.theoffice.mercadogue.repository.ClienteRepository;
 import com.theoffice.mercadogue.service.ClienteService;
 import org.hibernate.validator.constraints.br.CPF;
@@ -38,6 +39,27 @@ public class ClienteController {
 
         return ResponseEntity.ok().body(existeCEP);
     }
+
+
+    @GetMapping("consultaCepCompleto/{cep}") //alterar
+    public ResponseEntity<EnderecoDTO> consultaCepCompleto(@PathVariable String cep) {
+
+        EnderecoDTO enderecoDTO = clienteService.consultaCepCompleto(cep);
+
+        return ResponseEntity.ok().body(enderecoDTO);
+    }
+
+//
+//    "cep": "04046-400",
+//            "logradouro": "Avenida Jabaquara",
+//            "complemento": "de 2002 a 2630 - lado par",
+//            "bairro": "Mirandópolis",
+//            "localidade": "São Paulo",
+//            "uf": "SP",
+//            "ibge": "3550308",
+//            "gia": "1004",
+//            "ddd": "11",
+//            "siafi": "7107"
 
     @GetMapping("consultacpf/{cpf}")
     public ResponseEntity<Boolean> consultaCPF(@CPF @PathVariable String cpf) {
