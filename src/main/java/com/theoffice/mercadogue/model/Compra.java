@@ -10,8 +10,7 @@ import java.util.*;
 @Table(name = "tb_compra")
 public class Compra {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String enderecoEntrega;
     private int formaPagamento; //0 cartão, 1 boleto
@@ -24,7 +23,7 @@ public class Compra {
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCompra = new java.sql.Date(System.currentTimeMillis());
 
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.MERGE})
     @JoinTable(
             name = "compra_produto",
             joinColumns = @JoinColumn(name = "compra_id"),
@@ -48,6 +47,18 @@ public class Compra {
     public void setId(int id) {
 
         this.id = id;
+    }
+
+    public int getnParcelas() {
+        return nParcelas;
+    }
+
+    public void setnParcelas(int nParcelas) {
+        this.nParcelas = nParcelas;
+    }
+
+    public String getStatusPedido() {
+        return statusPedido;
     }
 
     public String getEnderecoEntrega() {
