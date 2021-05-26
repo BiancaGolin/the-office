@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,8 @@ public class CompraController {
 
     @GetMapping
     public ResponseEntity<List<Compra>> getAll() {
-        return ResponseEntity.ok(repository.findAll());
+        List<Compra> listcompra = repository.findAll();
+        return ResponseEntity.ok(listcompra);
     }
 
     @GetMapping("id/{id}")
@@ -30,6 +32,7 @@ public class CompraController {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Compra> postCompra(@RequestBody Compra compra){
         return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(compra));
     }

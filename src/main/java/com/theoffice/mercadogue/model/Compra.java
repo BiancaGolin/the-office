@@ -1,17 +1,17 @@
 package com.theoffice.mercadogue.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_compra")
 public class Compra {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
     private String enderecoEntrega;
     private int formaPagamento; //0 cartão, 1 boleto
@@ -24,19 +24,20 @@ public class Compra {
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCompra = new java.sql.Date(System.currentTimeMillis());
 
-    @ManyToMany(mappedBy = "likedCompras")
-    Set<Produto> listaDeProdutos;
+    @ManyToMany
+    @JoinTable(
+            name = "compra_produto",
+            joinColumns = @JoinColumn(name = "compra_id"),
+            inverseJoinColumns = @JoinColumn(name = "produto_id"))
+    Set<Produto> produtosVinculados = new HashSet<>();;
 
+    public Set<Produto> getProdutosVinculados() {
+        return produtosVinculados;
+    }
 
-//    @ManyToOne
-//    @JoinColumn(name="id_cliente")
-//    @JsonIgnoreProperties("compra")
-//    private Cliente cliente;
-//
-//    @OneToMany(cascade=CascadeType.ALL)
-//    @JoinColumn(name="id_produto")
-//    @JsonIgnoreProperties("compra")
-//    private List<Produto> produto;
+    public void setProdutosVinculados(Set<Produto> produtosVinculados) {
+        this.produtosVinculados = produtosVinculados;
+    }
 
 
     public int getId() {
@@ -47,14 +48,6 @@ public class Compra {
     public void setId(int id) {
 
         this.id = id;
-    }
-    public Set<Produto> getListaDeProdutos() {
-        return listaDeProdutos;
-    }
-
-    public void setListaDeProdutos(Set<Produto> listaDeProdutos) {
-//        listaDeProdutos.forEach(entity -> entity.setLikedCompras(this));
-        this.listaDeProdutos = listaDeProdutos;
     }
 
     public String getEnderecoEntrega() {
@@ -112,6 +105,8 @@ public class Compra {
     public int getFormaPagamento() {
         return formaPagamento;
     }
+
+
 }
 
 

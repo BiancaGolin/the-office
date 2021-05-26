@@ -10,4 +10,5 @@ import com.theoffice.mercadogue.model.Imagem;
 @Repository
 public interface ImagemRepository extends JpaRepository<Imagem, Integer> {
 	public List<Imagem> findAllById(int id);
+
 }

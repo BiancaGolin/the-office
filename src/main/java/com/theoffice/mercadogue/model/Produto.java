@@ -3,10 +3,12 @@ package com.theoffice.mercadogue.model;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -36,31 +38,25 @@ public class Produto {
 	@NotNull
 	private float preco;
 
-//	@OneToMany(cascade = CascadeType.ALL, mappedBy = "produto")
-//	@JoinColumn(name="imagem")
-//	@JsonIgnoreProperties("produto")
 
-	@OneToMany(mappedBy = "produto", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy = "produto")
 	private List<Imagem> imagem;
 
-	public List<Compra> getListaProdutos() {
-		return listaProdutos;
+
+	@JsonIgnore
+	@ManyToMany(mappedBy = "produtosVinculados")
+	Set<Compra> compras = new HashSet<>();
+
+	public Set<Compra> getCompras() {
+		return compras;
 	}
 
-	public void setListaProdutos(List<Compra> listaProdutos) {
-		this.listaProdutos = listaProdutos;
+	public void setCompras(Set<Compra> compras) {
+		this.compras = compras;
 	}
 
-	//	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-//	@JoinColumn(name = "id")
-	@ManyToMany
-	@JoinTable(
-		name="produto_liked_compras",
-		joinColumns = @JoinColumn(name = "tb_produto_id"),
-		inverseJoinColumns = @JoinColumn(name = "tb_compra_id")
-	)
-	public List<Compra> listaProdutos = new ArrayList<Compra>();
-//	Set<Compra> likedCompras;
+//	@OneToMany(mappedBy = "produtos")
+//	private Set<Compra> compras = new HashSet<>();
 
 	// Getters e Setters
 	public int getId() {
@@ -119,13 +115,6 @@ public class Produto {
 		this.preco = preco;
 	}
 
-//	public Set<Compra> getLikedCompras() {
-//		return likedCompras;
-//	}
-//
-//	public void setLikedCompras(Set<Compra> likedCompras) {
-//		this.likedCompras = likedCompras;
-//	}
 
 	public List<Imagem> getImagem() {
 		return imagem;
