@@ -6,6 +6,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -42,15 +43,24 @@ public class Produto {
 	@OneToMany(mappedBy = "produto", cascade=CascadeType.ALL)
 	private List<Imagem> imagem;
 
-//	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+	public List<Compra> getListaProdutos() {
+		return listaProdutos;
+	}
+
+	public void setListaProdutos(List<Compra> listaProdutos) {
+		this.listaProdutos = listaProdutos;
+	}
+
+	//	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 //	@JoinColumn(name = "id")
 	@ManyToMany
 	@JoinTable(
-		name="tb_produto_liked_compras",
-		joinColumns = @JoinColumn(name = "produto_id"),
-		inverseJoinColumns = @JoinColumn(name = "compra_id")
+		name="produto_liked_compras",
+		joinColumns = @JoinColumn(name = "tb_produto_id"),
+		inverseJoinColumns = @JoinColumn(name = "tb_compra_id")
 	)
-	Set<Compra> likedCompras;
+	public List<Compra> listaProdutos = new ArrayList<Compra>();
+//	Set<Compra> likedCompras;
 
 	// Getters e Setters
 	public int getId() {
@@ -109,13 +119,13 @@ public class Produto {
 		this.preco = preco;
 	}
 
-	public Set<Compra> getLikedCompras() {
-		return likedCompras;
-	}
-
-	public void setLikedCompras(Set<Compra> likedCompras) {
-		this.likedCompras = likedCompras;
-	}
+//	public Set<Compra> getLikedCompras() {
+//		return likedCompras;
+//	}
+//
+//	public void setLikedCompras(Set<Compra> likedCompras) {
+//		this.likedCompras = likedCompras;
+//	}
 
 	public List<Imagem> getImagem() {
 		return imagem;
