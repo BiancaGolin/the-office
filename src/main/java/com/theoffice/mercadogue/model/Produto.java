@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_produto")
@@ -40,6 +41,16 @@ public class Produto {
 
 	@OneToMany(mappedBy = "produto", cascade=CascadeType.ALL)
 	private List<Imagem> imagem;
+
+//	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+//	@JoinColumn(name = "id")
+	@ManyToMany
+	@JoinTable(
+		name="tb_produto_liked_compras",
+		joinColumns = @JoinColumn(name = "produto_id"),
+		inverseJoinColumns = @JoinColumn(name = "compra_id")
+	)
+	Set<Compra> likedCompras;
 
 	// Getters e Setters
 	public int getId() {
@@ -96,6 +107,14 @@ public class Produto {
 
 	public void setPreco(float preco) {
 		this.preco = preco;
+	}
+
+	public Set<Compra> getLikedCompras() {
+		return likedCompras;
+	}
+
+	public void setLikedCompras(Set<Compra> likedCompras) {
+		this.likedCompras = likedCompras;
 	}
 
 	public List<Imagem> getImagem() {
