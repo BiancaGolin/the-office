@@ -19,6 +19,7 @@ public class Compra {
     private float valorTotal;
     private float frete;
     private long numeroPedido;
+    private int idUsuario;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCompra = new java.sql.Date(System.currentTimeMillis());
@@ -47,6 +48,14 @@ public class Compra {
     public void setId(int id) {
 
         this.id = id;
+    }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public int getnParcelas() {

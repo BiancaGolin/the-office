@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e1a37b5-cdf2-44aa-b005-6d9e53005f39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/the-office.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-office.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/model/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/model/Compra.java" afterDir="false" />
     </list>
@@ -105,11 +106,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/controller/ClienteController.java</url>
           <line>46</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/theoffice/mercadogue/controller/CompraController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
