@@ -1,6 +1,7 @@
 package com.theoffice.mercadogue.controller;
 
 import com.theoffice.mercadogue.model.Compra;
+import com.theoffice.mercadogue.model.Produto;
 import com.theoffice.mercadogue.repository.CompraRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,6 +30,11 @@ public class CompraController {
         return repository.findById(id)
                 .map(resp -> ResponseEntity.ok(resp))
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping
+    public ResponseEntity<Compra> put(@RequestBody Compra compra) {
+        return ResponseEntity.ok(repository.save(compra));
     }
 
     @PostMapping
